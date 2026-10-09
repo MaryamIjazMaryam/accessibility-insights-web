@@ -170,6 +170,61 @@ header {
 }
 
 @media print {
+    @page {
+        margin: 12mm;
+    }
+
+    body {
+        max-width: none;
+        margin: 0;
+        font-size: 11pt;
+    }
+
+    header {
+        margin-bottom: 12px;
+    }
+
+    .details-section {
+        margin-bottom: 16px;
+    }
+
+    .details-section-header {
+        margin-bottom: 16px;
+        page-break-after: avoid;
+        break-after: avoid;
+    }
+
+    .assessment-details {
+        margin-bottom: 16px;
+    }
+
+    .assessment-header {
+        margin-bottom: 12px;
+        page-break-after: avoid;
+        break-after: avoid;
+    }
+
+    .step-details {
+        margin-bottom: 12px;
+        margin-left: 24px;
+        max-width: none;
+    }
+
+    .step-header {
+        padding-bottom: 6px;
+        page-break-after: avoid;
+        break-after: avoid;
+    }
+
+    .test-guidance-links-group {
+        display: none;
+    }
+
+    .report-footer {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
     .ms-Link,
     .link {
         text-decoration: none;
